@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplikasi OCR</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Aplikasi OCR Gambar</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="gambar" required>
+        <button type="submit">Proses OCR</button>
+    </form>
+
+    {% if hasil %}
+    <div class="result">
+        <h3>Hasil OCR:</h3>
+        <pre>{{ hasil }}</pre>
+    </div>
+    {% endif %}
+
+    <a href="/history">📜 Lihat Histori OCR</a>
+</div>
+
+</body>
+</html>
