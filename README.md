@@ -1,6 +1,8 @@
-Aplikasi ini merupakan aplikasi web berbasis Flask yang berfungsi untuk mengekstraksi teks dari gambar menggunakan teknologi Optical Character Recognition (OCR). Proses pengenalan teks dilakukan dengan bantuan Tesseract OCR dan didukung oleh teknik preprocessing citra menggunakan OpenCV untuk meningkatkan akurasi hasil pembacaan teks.
+
 
 1️⃣ Import Library
+
+
 import pytesseract
 from PIL import Image
 import cv2
@@ -9,15 +11,15 @@ from datetime import datetime
 from flask import Flask, render_template, request
 
 
-Library yang digunakan memiliki fungsi sebagai berikut:
-pytesseract: antarmuka Python untuk Tesseract OCR
-PIL (Image): mengelola format gambar
-OpenCV (cv2): melakukan preprocessing citra
-os: mengelola file dan direktori
-datetime: mencatat waktu proses OCR
-Flask: framework web
-render_template: menampilkan halaman HTML
-request: menerima data upload dari pengguna
+- Library yang digunakan memiliki fungsi sebagai berikut:
+- pytesseract: antarmuka Python untuk Tesseract OCR
+- PIL (Image): mengelola format gambar
+- OpenCV (cv2): melakukan preprocessing citra
+- os: mengelola file dan direktori
+- datetime: mencatat waktu proses OCR
+- Flask: framework web
+- render_template: menampilkan halaman HTML
+- request: menerima data upload dari pengguna
 
 2️⃣ Konfigurasi Tesseract OCR
 pytesseract.pytesseract.tesseract_cmd = (
